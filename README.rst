@@ -13,7 +13,7 @@ Sveetch Home
 
 *Generated from cookiecutter-bireli==0.3.9*
 
-My home webserver with useful apps
+My home webserver with useful apps.
 
 
 Main stack components
