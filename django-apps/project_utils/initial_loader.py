@@ -56,8 +56,6 @@ project-composer.
 import json
 from pathlib import Path
 
-from django.conf import settings
-from django.core.validators import slug_re
 from django.contrib.sites.models import Site
 
 from .exceptions import InitialDataLoaderException

@@ -37,20 +37,13 @@ collection = [
     "django_builtins",
     "smart_media",
     "sendfile",
-    #"django_filer",
-    #"ckeditor",
-    #"crispy",
+    "ckeditor",
     "webpack",
     "project_utils",
-    #"recaptcha",
-    #"icomoon",
-    #"fobi",
     "staticpages",
     "styleguide",
     "taggit",
     "lotus",
-    #"djangocms",
-    #"cmsplugin_blocks",
 ]
 repository = "composition_repository"
 syspaths = [
