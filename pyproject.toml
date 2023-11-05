@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sveetch-home"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+DJANGO_SETTINGS_MODULE = "project.settings"
+DJANGO_CONFIGURATION = "Test"
+addopts = "-vv"
+testpaths = [
+    "tests",
+]
+python_files = [
+    "*.py",
+]
+pythonpath = [
+    ".",
+    "django-apps",
+]
+filterwarnings = [
+    "ignore::django.utils.deprecation.RemovedInDjango41Warning",
+    "ignore::django.utils.deprecation.RemovedInDjango50Warning",
+    #"ignore::DeprecationWarning",
+]
+
+[tool.bireli]
+app_template = "https://github.com/sveetch/cookiecutter-bireli-newapp.git#0.1.1"
+
+[tool.project_composer]
+collection = [
+    "dal",
+    "django_builtins",
+    "smart_media",
+    "sendfile",
+    "django_filer",
+    "ckeditor",
+    "crispy",
+    "webpack",
+    "project_utils",
+    "recaptcha",
+    "icomoon",
+    "fobi",
+    "staticpages",
+    "styleguide",
+    "taggit",
+    "lotus",
+    "djangocms",
+    "cmsplugin_blocks",
+]
+repository = "composition_repository"
+syspaths = [
+    ".",
+]
+
+[tool.project_composer.requirements]
+template = "requirements/base_template.txt"
+application_label = "# {name}\n"
+application_divider = "\n"
+
+
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+extend-exclude = "/(.venv|tests|frontend|dist|migrations|project/static|project/static-sources|project/templates)/"
+skip-magic-trailing-comma = true
+
+[tool.autopep8]
+max_line_length = 88
+in-place = true
+recursive = true
+aggressive = 1
+exclude = ".venv,*/tests/,frontend,dist,*/migrations/,project/mods_enabled/,project/static/,project/static-sources/,project/templates/"
+
+[tool.djlint]
+profile = "django"
+require_pragma = false
+use_gitignore = true
+indent = 4
+max_line_length = 120
+ignore = "H006,H017,H021,H030,H031,T002"

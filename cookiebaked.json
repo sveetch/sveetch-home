@@ -1,0 +1,81 @@
+{
+    "__version": "0.1.0",
+    "_apply_symlink_to": [
+        [
+            "project/static-sources/ckeditor",
+            "project/static-sources/djangocms_text_ckeditor"
+        ]
+    ],
+    "_backend_stack": [
+        "python",
+        "django",
+        "project_composer",
+        "django_configurations"
+    ],
+    "_bireli_newapp_version": "0.1.1",
+    "_bireli_version": "0.3.9",
+    "_bootstrap_version": "5.2.0",
+    "_copy_without_render": [
+        "frontend/scss",
+        "frontend/js",
+        "frontend/.stylelintrc.json",
+        "frontend/.stylelintignore",
+        "project/locale",
+        "project/static",
+        "project/static-sources",
+        "project/templates",
+        "tests"
+    ],
+    "_django_configurations_version": "\u003e=2.3.2",
+    "_django_version": "\u003e=4.0,\u003c4.1",
+    "_frontend_stack": [
+        "node",
+        "npm",
+        "bootstrap",
+        "webpack"
+    ],
+    "_languages": {
+        "de": {
+            "name": "Deutsch",
+            "timezone": "Europe/Berlin"
+        },
+        "en": {
+            "name": "English",
+            "timezone": "America/Chicago"
+        },
+        "es": {
+            "name": "Espa\u00f1ol",
+            "timezone": "Europe/Madrid"
+        },
+        "fr": {
+            "name": "French",
+            "timezone": "Europe/Paris"
+        },
+        "it": {
+            "name": "Italiano",
+            "timezone": "Europe/Rome"
+        },
+        "ja": {
+            "name": "\u65e5\u672c\u8a9e",
+            "timezone": "Asia/Tokyo"
+        },
+        "zh": {
+            "name": "\u5b98\u8bdd",
+            "timezone": "Asia/Shanghai"
+        }
+    },
+    "_node_version": "\u003e=18.0.0",
+    "_npm_version": "\u003e=8.0.0",
+    "_output_dir": "/home/emencia/Projects",
+    "_project_composer_version": "\u003e=0.7.0,\u003c0.8.0",
+    "_python_version": "\u003e=3.10",
+    "_repo_dir": "/home/emencia/Projects/Apps/Cookies-dev/bireli",
+    "_template": "/home/emencia/Projects/Apps/Cookies-dev/bireli",
+    "_webpack_version": "^5.50.0",
+    "language": "fr",
+    "multiple_languages": true,
+    "project_name": "sveetch-home",
+    "project_short_description": "My home webserver with useful apps",
+    "project_title": "Sveetch Home",
+    "versioning": "natural"
+}

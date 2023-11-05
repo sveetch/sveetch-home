@@ -1,0 +1,1 @@
+cmsplugin-blocks==1.2.0
