@@ -38,14 +38,3 @@ class Test(ComposedProjectSettings):
             environ_name="DJANGO_DB_NAME",
             environ_prefix=None,
         )
-
-        # Add page test templates if cms is enabled
-        if hasattr(cls, "CMS_TEMPLATES"):
-            cls.CMS_TEMPLATES += [
-                (k, v)
-                for k, v in cls.TEST_PAGE_TEMPLATES.items()
-            ]
-
-        # Force disabling error about Recaptcha API development keys
-        if "captcha.recaptcha_test_key_error" not in cls.SILENCED_SYSTEM_CHECKS:
-            cls.SILENCED_SYSTEM_CHECKS.append("captcha.recaptcha_test_key_error")

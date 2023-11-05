@@ -1,6 +1,5 @@
 {
     "global_author": "admin",
-    "default_template": "pages/single_column.html",
     "site": {
         "name": "Demo",
         "domain": "localhost:8001"
@@ -13,30 +12,5 @@
             "email": "contact@localhost",
             "password": "ok"
         }
-    },
-    "pages": [
-        {
-            "key": "homepage",
-            "name": "Demo homepage",
-            "is_homepage": true
-        },
-        {
-            "key": "annexes",
-            "name": "Annexes",
-            "children": [
-                {
-                    "key": "contact",
-                    "name": "Contact"
-                },
-                {
-                    "key": "legal-notice",
-                    "name": "Legal notice"
-                },
-                {
-                    "key": "privacy_policy",
-                    "name": "Privacy policy"
-                }
-            ]
-        }
-    ]
+    }
 }

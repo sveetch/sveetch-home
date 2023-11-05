@@ -32,7 +32,3 @@ class Development(ComposedProjectSettings):
             True,
             environ_name="STYLEGUIDE_SAVE_DUMP",
         )
-
-        # Force disabling error about Recaptcha API development keys
-        if "captcha.recaptcha_test_key_error" not in cls.SILENCED_SYSTEM_CHECKS:
-            cls.SILENCED_SYSTEM_CHECKS.append("captcha.recaptcha_test_key_error")
