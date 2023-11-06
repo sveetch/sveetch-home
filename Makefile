@@ -11,6 +11,7 @@ FLAKE=$(VENV_BIN)/flake8
 PYTEST=$(VENV_BIN)/pytest
 DJLINT=$(VENV_BIN)/djlint
 BLACK=$(VENV_BIN)/black
+GUNICORN_BIN=$(VENV_BIN)/gunicorn
 
 DJANGOPROJECT_DIR=project
 DJANGOAPPS_DIR=django-apps
@@ -263,6 +264,13 @@ run:
 	@echo ""
 	$(DJANGO_MANAGE) runserver 0.0.0.0:8001
 .PHONY: run
+
+gunicorn:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Starting server with Gunicorn on producion environment <---$(FORMATRESET)\n"
+	@echo ""
+	$(GUNICORN_BIN) --config gunicorn.conf.py project.wsgi
+.PHONY: gunicorn
 
 css:
 	@echo ""

@@ -2,3 +2,4 @@
 -r ./base.txt
 psycopg2
 uwsgi
+gunicorn[setproctitle]

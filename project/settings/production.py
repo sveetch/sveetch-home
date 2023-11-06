@@ -9,3 +9,5 @@ class Production(ComposedProjectSettings):
     """
     # Labelize the deployed production environment name
     ENVIRONMENT = values.Value("Production", environ_name="DEPLOYED_ENVIRONMENT")
+
+    # ALLOWED_HOSTS = ["*"]

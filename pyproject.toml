@@ -56,8 +56,6 @@ template = "requirements/base_template.txt"
 application_label = "# {name}\n"
 application_divider = "\n"
 
-
-
 [tool.black]
 line-length = 88
 target-version = ["py310"]
