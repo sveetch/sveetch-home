@@ -1,0 +1,41 @@
+# This file is automatically overwritten by composer, DO NOT EDIT IT.
+# Written on: 2023-11-06T01:11:48
+
+# Base
+Pillow>=9.0
+Django>=4.0,<4.1
+django-configurations>=2.3.2
+
+# dal
+django-autocomplete-light
+
+# smart_media
+sorl-thumbnail>=12.9.0
+django-smart-media
+
+# sendfile
+django-sendfile2>=0.7.0
+
+# ckeditor
+django-ckeditor==6.5.0
+
+# webpack
+django-webpack-loader>=1.6.0,<2.0.0
+
+# staticpages
+emencia-django-staticpages>=0.5.1,<1.0.0
+
+# styleguide
+py-css-styleguide>=0.8.2,<1.0.0
+
+# taggit
+django-taggit
+
+# lotus
+django-blog-lotus[breadcrumbs]==0.6.0
+
+# django_deovi
+# Temporarly pin bigtree with pandas extra requirement until
+# django-deovi fixed bigtree requirement to enable the extra one
+bigtree[pandas]==0.10.3
+django-deovi[breadcrumbs]==0.6.1

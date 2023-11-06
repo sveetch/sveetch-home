@@ -100,12 +100,15 @@
 @import "./bootbutt/objects/cta";
 @import "./bootbutt/objects/spot";
 
-// @import "./objects/...";
+@import "./objects/icons";
+@import "./objects/treegrid";
 
 // Page components to be last
 @import "./components/header";
 @import "./components/footer";
 @import "./components/content";
+@import "./components/deovi_device-detail";
+@import "./components/deovi_directory-detail";
 
 // Trumps patchs would goes here
 // @import "./trumps/...";

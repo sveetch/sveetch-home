@@ -13,6 +13,6 @@ class LotusSettings(LotusDefaultSettings, EnabledApplicationMarker):
         super(LotusSettings, cls).setup()
 
         cls.INSTALLED_APPS.extend([
-            "view_breadcrumbs",
+            "view_breadcrumbs", # TODO: Need its own composable app
             "lotus",
         ])

@@ -44,3 +44,16 @@ import {
 //
 // var myModal = new Modal(document.getElementById("exampleModalDefault"));
 // myModal.show();
+
+import { DeviceTreeDisplay, DeviceTreeExport } from "./components/device-tree";
+
+//
+// Run components once DOM is loaded
+//
+document.addEventListener("DOMContentLoaded", function () {
+    // Device tree UI features
+    DeviceTreeDisplay();
+
+    // Device tree export features
+    DeviceTreeExport();
+});

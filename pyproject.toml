@@ -44,6 +44,7 @@ collection = [
     "styleguide",
     "taggit",
     "lotus",
+    "django_deovi",
 ]
 repository = "composition_repository"
 syspaths = [

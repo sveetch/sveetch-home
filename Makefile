@@ -84,6 +84,11 @@ help:
 	@echo
 	@echo "  quality                       -- to launch Flake8 checking and every tests suites"
 	@echo
+	@echo "  import-deovi-onoflix          -- to import a Deovi dump for device 'OnoFlix'"
+	@echo "  import-deovi-onoprime         -- to import a Deovi dump for device 'OnoPrime'"
+	@echo "  import-deovi-milkyway         -- to import a Deovi dump for device 'MilkyWay'"
+	@echo "  import-deovi-andromeda        -- to import a Deovi dump for device 'Andromeda'"
+	@echo
 
 clean-pycache:
 	@echo ""
@@ -414,3 +419,31 @@ quality: test-initial flake check-migrations
 	@echo "♥ ♥ Everything should be fine ♥ ♥"
 	@echo ""
 .PHONY: quality
+
+import-deovi-onoflix:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Importing Deovi dump for 'OnoFlix' device <---$(FORMATRESET)\n"
+	@echo ""
+	$(DJANGO_MANAGE) load_medias OnoFlix var/deovi-dumps/onoflix.json;
+.PHONY: import-deovi-onoflix
+
+import-deovi-onoprime:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Importing Deovi dump for 'OnoPrime' device <---$(FORMATRESET)\n"
+	@echo ""
+	$(DJANGO_MANAGE) load_medias OnoPrime var/deovi-dumps/onoprime.json;
+.PHONY: import-deovi-onoprime
+
+import-deovi-milkyway:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Importing Deovi dump for 'MilkyWay' device <---$(FORMATRESET)\n"
+	@echo ""
+	$(DJANGO_MANAGE) load_medias MilkyWay var/deovi-dumps/milkyway.json;
+.PHONY: import-deovi-milkyway
+
+import-deovi-andromeda:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Importing Deovi dump for 'Andromeda' device <---$(FORMATRESET)\n"
+	@echo ""
+	$(DJANGO_MANAGE) load_medias Andromeda var/deovi-dumps/andromeda.json;
+.PHONY: import-deovi-andromeda

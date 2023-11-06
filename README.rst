@@ -6,6 +6,7 @@
 .. _project-composer: https://github.com/sveetch/project-composer
 .. _Webpack: https://webpack.js.org/
 .. _django-configurations: https://django-configurations.readthedocs.io/
+.. _Django Deovi: https://github.com/sveetch/django-deovi
 
 ============
 Sveetch Home
@@ -26,6 +27,7 @@ Main stack components
 * `Node.js`_ >=18.0.0;
 * `NPM`_ >=8.0.0;
 * `Bootstrap`_ 5.2.0;
+* `Django Deovi`_ >=0.6.1;
 
 
 Install

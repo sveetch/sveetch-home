@@ -1,0 +1,4 @@
+# Temporarly pin bigtree with pandas extra requirement until
+# django-deovi fixed bigtree requirement to enable the extra one
+bigtree[pandas]==0.10.3
+django-deovi[breadcrumbs]==0.6.1
