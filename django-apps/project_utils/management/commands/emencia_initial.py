@@ -1,7 +1,5 @@
 from django.core.management.base import CommandError, BaseCommand
 
-from cms.api import Page
-
 from ...initial_loader import InitialDataLoader
 
 
@@ -24,14 +22,6 @@ class Command(BaseCommand):
         self.stdout.write(
             self.style.SUCCESS("=== Loading initial data ===")
         )
-
-        # Validate database is empty
-        existing = Page.objects.all()
-        if existing.count():
-            raise CommandError(
-                "Initial data can only be loaded when the database is empty from any "
-                "objects. You should (carefuly) use Django command 'flush' before."
-            )
 
         self.stdout.write("* Opened JSON source: {}".format(options["dump"]))
 
